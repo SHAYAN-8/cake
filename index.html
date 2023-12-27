@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index follow">
+  <meta name="description"
+    content="Experience homemade delights at Blue Ribbon Bakers. Our passion for baking brings warmth and nostalgia to every treat.">
+  <meta name="keywords" content="Cakes,Cupcakes,Bakers">
+  <meta name="author" content="M&S Programmers">
+  <!-- TITLE -->
+  <title>Blue Ribbon Bakers & Confectioners</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+
+  <!-- CUSTOMIZE STYLE SHEET -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- Font Awesome 4.7 Icons (Fallback) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div id="modal">
+    <b id="back" onclick="document.getElementById('modal').style.display='none'; document.documentElement.style.overflow = 'auto';" class="text-lg cursor-pointer">&nbsp; <i class="fas fa-arrow-left"></i> Back</b>
+    <section class="text-gray-600 body-font overflow-hidden">
+      <div class="container px-5 py-14 mx-auto">
+        <div class="lg:w-4/5 mx-auto flex flex-wrap">
+          <img  id="modal_img" alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-contain object-center rounded-lg"
+            src="">
+          <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+            <h2 class="text-sm title-font text-gray-500 tracking-widest">BR BAKERS</h2>
+            <h1 id="modal_name" class="text-gray-900 text-3xl title-font font-medium mb-1">-----</h1>
+            <br>
+            <p id="modal_desc" class="text-gray-900">.....</p>
+          
+            <br>
+            
+          <button class="flex ml-auto text-white bg-blue-800 font-semibold border-0 py-2 px-4 text-xl
+ focus:outline-none  hover:bg-blue-900 rounded">Buy Now</button>
+
+                
+
+
+              
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- NAVVBAR -->
+
+  <Nav id="navbar">
+    <div class="nav_items" id="nav_item1">
+      <a href="#">
+        <img src="images/logo.jpg" alt="logo" id="logo" />
+      </a>
+      <p>Blue Ribbon Bakers & Confectioners</p>
+    </div>
+    <div class="nav_items nav_item2" id="nav_item2">
+      <a href="#" class="nav_links">Home</a>
+      <a href="#about" class="nav_links">About</a>
+
+      <div class="dropdown nav_links">
+        <a href="#products" class="dropbtn">Products</a>
+        <div class="dropdown-content">
+          <a href="#cakes">Cakes</a>
+          <a href="#cup_cakes">Cup Cakes</a>
+        </div>
+      </div>
+
+      <a href="#services" class="nav_links">Services</a>
+      <a href="#contact" class="nav_links">Contact</a>
+    </div>
+
+
+    <div class="nav_items" id="nav_item4" onclick="nav_toggle()">
+      <div class="menu" onclick="myFunction(this)">
+        <div class="bar1 bar"></div>
+        <div class="bar2 bar"></div>
+        <div class="bar3 bar"></div>
+      </div>
+    </div>
+  </Nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <img id="bg_image" src="images/bg.jpg" alt="background image">
+  </section>
+
+  <!-- ABOUT SECTION -->
+
+  <section id="about" class="max-width section">
+    <h1 class="heading" data-aos="zoom-in">ABOUT</h1>
+    <p class="para" data-aos="fade-right">
+      Welcome to Blue Ribbon Bakery & Confectioners, a cherished Karachi bakery established in 1969, boasts seven
+      branches. They've been serving up mouthwatering treats like cakes, pastries, and bread for over five decades. This
+      bakery holds a special place in the hearts of Karachi residents, offering delightful goodies that have stood the
+      test of time. With its rich history and commitment to quality, Blue Ribbon Bakery remains an enduring icon in
+      Karachi's culinary scene, proudly catering to the city's diverse tastes.
+    </p>
+    <br />
+  </section>
+
+  <!-- PRODUCT SECTION -->
+
+  <section id="products" class="max-width section">
+    <br />
+    <br />
+    <h1 class="heading" data-aos="zoom-in">PRODUCTS</h1>
+    <br />
+    <br />
+    <!-- WHEEL SECTION -->
+
+    <h2 class="sub-heading" data-aos="fade">Cakes</h2>
+    <section id="cakes" class="container"></section>
+    <br />
+    <br />
+
+    <!-- TIRE SECTION -->
+
+    <h2 class="sub-heading" data-aos="fade">Cup Cakes</h2>
+    <section id="cup_cakes" class="container"></section>
+
+    <br />
+    <br />
+    <br />
+  </section>
+
+  <!-- SERVICES SECTION -->
+
+  <section id="services" class="max-width section">
+    <br />
+    <h1 class="heading" data-aos="zoom-in">SERVICES</h1>
+    <p class="para" data-aos="fade-right">
+      Our passion is crafting delectable moments for you. From elegant wedding
+      cakes to a delightful array of cupcakes, cookies, and pastries for all
+      occasions, we tailor our treats to your preferences. With options like
+      gluten-free, vegan, and allergen-sensitive choices, everyone can savor
+      the goodness. At Blue Ribbon Bakers, we're dedicated to making your moments
+      truly special, one delectable bite at a time.
+    </p>
+    <div class="servives_flex">
+
+
+      <!-- SERVICES BOX 1 -->
+
+      <div class="services_box" data-aos="fade-right">
+        <div class="icon">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h2 class="services_heading">FONDANT ARTWORK</h2>
+        <p class="para_1">
+          We provide an exquisite fondant artwork service that elevates your
+          cakes to new heights. Our skilled artisans craft edible
+          masterpieces, from delicate flowers to intricate figurines, turning
+          your visions into captivating and delectable reality.
+        </p>
+      </div>
+
+      <!-- SERVICES BOX 2 -->
+
+      <div class="services_box" data-aos="fade-up">
+        <div class="icon">
+          <i class="fas fa-birthday-cake"></i>
+        </div>
+        <h2 class="services_heading">THEME CAKES</h2>
+        <p class="para_1">
+          Our theme cakes service brings your imagination to life. From
+          enchanting fairy tales to thrilling adventures, we craft visually
+          stunning and delicious creations that make your special moments
+          truly magical.
+        </p>
+      </div>
+      <!-- SERVICES BOX 3 -->
+
+      <div class="services_box" data-aos="fade-left">
+        <div class="icon">
+          <i class='fas fa-shipping-fast'></i>
+        </div>
+        <h2 class="services_heading">DELIVERY SERVICE</h2>
+        <p class="para_1">
+          Blue Ribbon Bakers offers a delightful cake delivery service, bringing homemade confections straight to your
+          door.
+          With
+          a delectable array of flavors and personalized designs, indulgence has never been more convenient.
+        </p>
+      </div>
+    </div>
+    <br />
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section id="contact">
+    <br />
+    <br />
+    <section id="contact" class="max-width">
+      <h1 class="heading" data-aos="zoom-in">CONTACT</h1>
+      <div class="contact_flex">
+        <ul class="contact_list" data-aos="fade-left">
+          <li><b>Blue Ribbon Bakers & Confectioners</b></li>
+          <li>
+            <a href="https://www.google.com/maps/place/Blue+Ribbon+Bakers+and+Sweets/@24.9254144,66.9386124,12z/data=!4m10!1m2!2m1!1sblue+ribbon+bakery+and+Confectioners1969!3m6!1s0x3eb33e5b929c737b:0x69f9ac452066ce92!8m2!3d24.8799614!4d67.0388203!15sCihibHVlIHJpYmJvbiBiYWtlcnkgYW5kIENvbmZlY3Rpb25lcnMxOTY5WioiKGJsdWUgcmliYm9uIGJha2VyeSBhbmQgY29uZmVjdGlvbmVyczE5NjmSAQZiYWtlcnmaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUnpiSEpRT0hOM1JSQULgAQA!16s%2Fg%2F1tjl4cmg?entry=ttu"
+              class="links"><i class="fa fa-map-marker"></i> Karachi, Pakistan
+            </a>
+          </li>
+          <li>
+            <a href="tel:+923302713587" class="links"><i class="fa fa-phone"></i>
+              0330-2713587
+            </a>
+          </li>
+          <li>
+            <a href="mailto:blueribbonbakers1969@gmail.com" class="links"><i class="fa fa-envelope-o"></i>
+              blueribbonbakers1969@gmail.com
+            </a>
+          </li>
+          <li><a href="#" class="links"></a></li>
+        </ul>
+        <ul class="contact_list" data-aos="fade-down">
+          <li><b>Information</b></li>
+          <li><a href="#about" class="links">About</a></li>
+          <li><a href="#contact" class="links">Contact</a></li>
+          <li><a href="#services" class="links"> Servives</a></li>
+          <li><a href="#services" class="links">Delivery</a></li>
+        </ul>
+        <ul class="contact_list" data-aos="fade-right">
+          <li><b>Contacts</b></li>
+          <li>
+            <a href="https://www.facebook.com/blueribbonbakers.pk/" target="_blank" class="links"><i
+                class="fa fa-facebook"></i>
+              Facebook
+            </a>
+          </li>
+
+          <li>
+            <a href="https://m.me/105314184246320" target="_blank" class="links">
+              <i class="fab fa-facebook-messenger"></i>
+              Messenger
+            </a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=923302713587" target="_blank" class="links"><i
+                class="fa fa-whatsapp"></i>
+              Whatsapp
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/blueribbonbakers.pk/" target="_blank" class="links"><i
+                class="fa fa-instagram"></i>
+              Instagram
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </section>
+  <!-- FOOTER -->
+
+  <footer>
+    <!-- WHATSAPP BUTTON -->
+
+    <a href="https://api.whatsapp.com/send?phone=923302713587" class="contact_btn">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <!-- COPY RIGHT FOOTER -->
+
+    <p class="copy-right">Copyright © 2023 all rights reserved. Created by <a href="https://portfolio.shayan8.repl.co/">
+        M&S Programmers</a></p>
+  </footer>
+</body>
+<!-- CUSTOMIZE SCRIPT -->
+<script src="script.js"></script>
+<!-- AOS SCRIPT -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
